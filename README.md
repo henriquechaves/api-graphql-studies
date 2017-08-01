@@ -20,3 +20,15 @@ Você pode consultar o schema navegando através das relações entre os resourc
 ## Desempenho
 
 Retorne apenas o que precisa, e não um resource que contém todos os dados.
+
+## GraphQL codebase contém o para construção de APIs GraphQL (CRUD, auth, advanced patterns, etc) 
+
+## Application Structure
+
+* `data/schema.graphql` - Is the file that resolve the Graphql schema.
+* `src/server.js` - Entry point of the application. This file define the Hapi.js server and graphql-server-hapi. 
+* `src/core` - This folder contains all helper files, like `src/core/config.js` and `src/core/schema.js`.
+* `src/resource` - This folder contains the resources folders. Any resource must auto contain itself.
+* `src/resource/resolver.js` - This file must load and merge all the resolver files under the resource folder.
+* `src/resource/users` - This file contains the `user` resource and have 2 files inside `controller.js` that have an abstraction of the user CRUD and `resolver.js`. 
+
