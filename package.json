@@ -23,7 +23,7 @@
     "hapi": "^16.5.0",
     "hapi-auth-jwt2": "^7.3.0",
     "joi": "^10.6.0",
-    "jsonwebtoken": "^7.4.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.4",
     "request": "^2.81.0",
     "request-promise": "^4.2.1"
